@@ -1,10 +1,9 @@
-package oy.ds.arrays.test;
+package org.yasar.ds.arrays.test;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-import oy.ds.arrays.MinJumps;
+import org.yasar.ds.arrays.MinJumps;
 
 public class MinJumpsTest
 {

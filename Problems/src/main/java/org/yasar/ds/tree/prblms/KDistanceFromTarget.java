@@ -1,9 +1,9 @@
-package oy.ds.tree.prblms;
+package org.yasar.ds.tree.prblms;
 
 import java.util.Stack;
 
-import oy.ds.tree.Node1;
-import oy.ds.tree.TreeUtil;
+import org.yasar.ds.tree.Node1;
+import org.yasar.ds.tree.TreeUtil;
 
 /**
  * 

@@ -1,4 +1,4 @@
-package oy.ds.matrix;
+package org.yasar.ds.matrix;
 
 /**
  * Rotate a Matrix by 90 degrees

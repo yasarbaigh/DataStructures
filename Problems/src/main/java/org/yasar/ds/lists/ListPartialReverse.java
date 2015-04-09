@@ -1,4 +1,4 @@
-package oy.ds.lists;
+package org.yasar.ds.lists;
 
 /**
  * http://edwardliwashu.blogspot.in/2013/02/reverse-nodes-in-k-group.html

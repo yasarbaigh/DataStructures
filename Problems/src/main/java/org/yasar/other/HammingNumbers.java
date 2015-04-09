@@ -1,4 +1,4 @@
-package oy.other;
+package org.yasar.other;
 
 import java.util.Arrays;
 //http://stackoverflow.com/questions/7215315/find-the-kth-least-number-for-expression-2x3y5z

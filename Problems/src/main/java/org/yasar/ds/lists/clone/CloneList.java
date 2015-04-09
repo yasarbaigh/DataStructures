@@ -1,4 +1,4 @@
-package oy.ds.lists.clone;
+package org.yasar.ds.lists.clone;
 
 import java.util.HashMap;
 import java.util.Map;

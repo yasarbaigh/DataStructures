@@ -1,8 +1,7 @@
-package oy.ds.string.test;
+package org.yasar.ds.string.test;
 
 import org.junit.Test;
-
-import oy.ds.string.AnagramCheck;
+import org.yasar.ds.string.AnagramCheck;
 
 public class AnagramsCheckTest
 {

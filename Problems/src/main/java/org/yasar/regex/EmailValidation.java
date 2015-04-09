@@ -1,4 +1,4 @@
-package oy.regex;
+package org.yasar.regex;
 
 
 public class EmailValidation

@@ -1,4 +1,4 @@
-package oy.ds.lists.clone;
+package org.yasar.ds.lists.clone;
 
 
 //http://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/

@@ -1,8 +1,7 @@
-package oy.ds.bits;
+package org.yasar.ds.bits;
 
 import org.apache.log4j.Logger;
-
-import oy.logger.MyLogger;
+import org.yasar.logger.MyLogger;
 
 /**
  * http://www.cs.arizona.edu/classes/cs335/spring11/AssignmentsS11/bit-manipulation-tutorial.pdf

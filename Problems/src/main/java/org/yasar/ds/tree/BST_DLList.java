@@ -1,4 +1,4 @@
-package oy.ds.tree;
+package org.yasar.ds.tree;
 
 import java.util.LinkedList;
 import java.util.Queue;

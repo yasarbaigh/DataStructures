@@ -1,40 +1,16 @@
-package oy.ds.tree.prblms;
-
-import static oy.ds.tree.TreeUtil.treeInsert;
+package org.yasar.ds.tree.prblms;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-import oy.ds.tree.Node1;
-import oy.ds.tree.TreeUtil;
+import org.yasar.ds.tree.TreeNode;
+import org.yasar.ds.tree.TreeNode;
 
 public class Serialization
 {
 
-	public static Node1 getRoot1()
-	{
-		Node1 root = new Node1(8);
-		treeInsert(root, 4);
-		treeInsert(root, 12);
-
-		treeInsert(root, 2);
-		treeInsert(root, 6);
-		treeInsert(root, 10);
-		treeInsert(root, 15);
-
-		treeInsert(root, 1);
-		//treeInsert(root, 3);
-		//treeInsert(root, 5);
-		treeInsert(root, 7);
-		//treeInsert(root, 9);
-		treeInsert(root, 11);
-		treeInsert(root, 14);
-		//treeInsert(root, 16);
-		
-
-		return root;
-	}
+	
 
 	static StringBuilder serializeString = new StringBuilder();
 
@@ -43,7 +19,7 @@ public class Serialization
 	 * 
 	 * @param root
 	 */
-	public static void serializeTree(Node1 root)
+	public static void serializeTree(TreeNode root)
 	{
 		if(root == null) {
 			serializeString.append("# ");
@@ -62,7 +38,7 @@ public class Serialization
 	 * 
 	 * @param root
 	 */
-	public static Node1 deSerializeTree(String[] tokens)
+	public static TreeNode deSerializeTree(String[] tokens)
 	{		
 
 		if(tokens[index].equals("#"))
@@ -71,7 +47,7 @@ public class Serialization
 			return null;
 		}
 		
-		Node1 root = new Node1(Integer.parseInt(tokens[index++]));		
+		TreeNode root = new TreeNode(Integer.parseInt(tokens[index++]));		
 		
 		root.left = deSerializeTree(tokens);		
 		root.right = deSerializeTree(tokens);
@@ -81,12 +57,12 @@ public class Serialization
 	public static void main(String[] args)
 	{
 		
-		Node1 root = getRoot1();
+		TreeNode root = TreeNode.getRoot1();
 		
 		System.out.print("In Order  : ");
-		TreeUtil.printTreeInOrder(root);		
+		TreeNode.printTreeInOrder(root);		
 		System.out.print("\nPre Order : ");
-		TreeUtil.printTreePreOrder(root);
+		TreeNode.printTreePreOrder(root);
 		
 		System.out.print("\nSerialized Tree : ");
 		serializeTree(root);
@@ -97,21 +73,21 @@ public class Serialization
 		
 		
 		System.out.println("Tree after DeSerializing");		
-		Node1 deSerializedRoot = deSerializeTree(serializeString.toString().split("\\s"));
+		TreeNode deSerializedRoot = deSerializeTree(serializeString.toString().split("\\s"));
 		
 		System.out.print("In Order  : ");
-		TreeUtil.printTreeInOrder(deSerializedRoot);
+		TreeNode.printTreeInOrder(deSerializedRoot);
 		System.out.print("\nPre Order : ");
-		TreeUtil.printTreePreOrder(deSerializedRoot);
+		TreeNode.printTreePreOrder(deSerializedRoot);
 		
 		
 		System.out.println("\nTree after Selva DeSerializing");	
 		deSerializedRoot = deserializeSelva(serializeString.toString());
 		
 		System.out.print("In Order  : ");
-		TreeUtil.printTreeInOrder(deSerializedRoot);
+		TreeNode.printTreeInOrder(deSerializedRoot);
 		System.out.print("\nPre Order : ");
-		TreeUtil.printTreePreOrder(deSerializedRoot);
+		TreeNode.printTreePreOrder(deSerializedRoot);
 	}
 
 	
@@ -121,12 +97,12 @@ public class Serialization
 	 * @param str
 	 * @return
 	 */
-	public static Node1 deserializeSelva(final String str)
+	public static TreeNode deserializeSelva(final String str)
 	{		
-		Stack<Node1> stack = new Stack<Node1>();
-		Map<Node1, Integer> map = new HashMap<Node1, Integer>();
+		Stack<TreeNode> stack = new Stack<TreeNode>();
+		Map<TreeNode, Integer> map = new HashMap<TreeNode, Integer>();
 
-		Node1 curNode = null;
+		TreeNode curNode = null;
 
 		for (final String vle : str.split(" ")) 
 		{
@@ -147,7 +123,7 @@ public class Serialization
 			}
 			else 
 			{
-				Node1 node = new Node1(Integer.valueOf(vle));
+				TreeNode node = new TreeNode(Integer.valueOf(vle));
 
 				if(!stack.isEmpty() && !map.containsKey(stack.peek()))
 				{

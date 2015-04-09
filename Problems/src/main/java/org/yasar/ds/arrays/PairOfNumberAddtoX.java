@@ -1,9 +1,8 @@
-package oy.ds.arrays;
+package org.yasar.ds.arrays;
 
 import org.apache.log4j.Logger;
-
-import oy.ds.bits.BitsAndBytes;
-import oy.logger.MyLogger;
+import org.yasar.ds.bits.BitsAndBytes;
+import org.yasar.logger.MyLogger;
 
 public class PairOfNumberAddtoX
 {

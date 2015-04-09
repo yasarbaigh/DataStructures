@@ -1,8 +1,7 @@
-package oy.regex.test;
+package org.yasar.regex.test;
 
 import org.junit.Test;
-
-import oy.regex.PassworValidation;
+import org.yasar.regex.PassworValidation;
 
 public class PasswordValidationTest
 {

@@ -1,4 +1,4 @@
-package oy.ds.tree.cnstrct;
+package org.yasar.ds.tree.cnstrct;
 
 /**
  * 

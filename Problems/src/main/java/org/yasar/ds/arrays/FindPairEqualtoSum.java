@@ -1,11 +1,10 @@
-package oy.ds.arrays;
+package org.yasar.ds.arrays;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
-
-import oy.logger.MyLogger;
+import org.yasar.logger.MyLogger;
 
 /**
  * 

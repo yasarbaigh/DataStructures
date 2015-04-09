@@ -1,8 +1,7 @@
-package oy.ds.number;
+package org.yasar.ds.number;
 
 import org.apache.log4j.Logger;
-
-import oy.logger.MyLogger;
+import org.yasar.logger.MyLogger;
 
 public class SingleLineSwaps
 {

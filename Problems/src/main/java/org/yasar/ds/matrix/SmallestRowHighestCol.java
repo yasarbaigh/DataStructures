@@ -1,4 +1,4 @@
-package oy.ds.matrix;
+package org.yasar.ds.matrix;
 
 public class SmallestRowHighestCol
 {

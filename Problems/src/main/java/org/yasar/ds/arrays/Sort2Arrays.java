@@ -1,4 +1,4 @@
-package oy.ds.arrays;
+package org.yasar.ds.arrays;
 
 public class Sort2Arrays
 {

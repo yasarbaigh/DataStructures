@@ -1,4 +1,4 @@
-package oy.ds.graph;
+package org.yasar.ds.graph;
 
 import java.util.List;
 

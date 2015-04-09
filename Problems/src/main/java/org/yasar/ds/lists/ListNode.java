@@ -1,4 +1,4 @@
-package oy.ds.lists;
+package org.yasar.ds.lists;
 
 public class ListNode
 {

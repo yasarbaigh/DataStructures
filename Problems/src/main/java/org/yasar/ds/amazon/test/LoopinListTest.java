@@ -1,9 +1,7 @@
-package oy.ds.amazon.test;
+package org.yasar.ds.amazon.test;
 
 import org.junit.Test;
-
-import oy.ds.amazon.LoopInList;
-import oy.ds.amazon.LoopInList.Node;
+import org.yasar.ds.amazon.LoopInList;
 
 public class LoopinListTest
 {

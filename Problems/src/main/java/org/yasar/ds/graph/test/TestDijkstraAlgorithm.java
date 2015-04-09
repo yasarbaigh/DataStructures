@@ -1,4 +1,4 @@
-package oy.ds.graph.test;
+package org.yasar.ds.graph.test;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -8,11 +8,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 import org.junit.Test;
-
-import oy.ds.graph.DijkstraAlgorithm;
-import oy.ds.graph.Edge;
-import oy.ds.graph.Graph;
-import oy.ds.graph.Vertex;
+import org.yasar.ds.graph.DijkstraAlgorithm;
+import org.yasar.ds.graph.Edge;
+import org.yasar.ds.graph.Graph;
+import org.yasar.ds.graph.Vertex;
 
 public class TestDijkstraAlgorithm
 {

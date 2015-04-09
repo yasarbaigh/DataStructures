@@ -1,4 +1,4 @@
-package oy.ds.bits;
+package org.yasar.ds.bits;
 
 public class DivisibleBy9Bits
 {

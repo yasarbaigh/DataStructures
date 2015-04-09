@@ -1,4 +1,4 @@
-package oy.ds.tree.cnstrct;
+package org.yasar.ds.tree.cnstrct;
 
 /**
  * http://www.geeksforgeeks.org/full-and-complete-binary-tree-from-given-preorder-and-postorder-traversals/

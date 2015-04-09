@@ -1,8 +1,7 @@
-package oy.ds.number.test;
+package org.yasar.ds.number.test;
 
 import org.junit.Test;
-
-import oy.ds.number.PowerofAB;
+import org.yasar.ds.number.PowerofAB;
 
 public class PowerOfABTest
 {

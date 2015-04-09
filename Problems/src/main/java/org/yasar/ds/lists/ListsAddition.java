@@ -1,6 +1,5 @@
-package oy.ds.lists;
+package org.yasar.ds.lists;
 
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
 

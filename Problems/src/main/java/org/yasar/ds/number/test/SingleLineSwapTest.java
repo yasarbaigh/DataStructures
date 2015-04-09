@@ -1,8 +1,7 @@
-package oy.ds.number.test;
+package org.yasar.ds.number.test;
 
 import org.junit.Test;
-
-import oy.ds.number.SingleLineSwaps;
+import org.yasar.ds.number.SingleLineSwaps;
 
 public class SingleLineSwapTest
 {

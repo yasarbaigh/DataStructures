@@ -1,10 +1,9 @@
-package oy.ds.arrays.test;
+package org.yasar.ds.arrays.test;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-import oy.ds.arrays.SortedCircularArray;
+import org.yasar.ds.arrays.SortedCircularArray;
 
 public class SortedCircularArrayTest
 {

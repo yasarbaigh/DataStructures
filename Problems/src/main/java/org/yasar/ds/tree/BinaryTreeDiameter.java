@@ -1,12 +1,10 @@
-package oy.ds.tree;
+package org.yasar.ds.tree;
 
 import java.util.Random;
 
-import oy.ds.tree.PrintBTVertical.Node;
-
 public class BinaryTreeDiameter {
 
-	public static Node root = null;
+	public static TreeNode root = null;
 	public static final int N = 10;
 	public static final int RANGE = 100;
 
@@ -22,7 +20,7 @@ public class BinaryTreeDiameter {
 				+ diameterOfBinaryTree(root));
 	}
 
-	public static int diameterOfBinaryTree(Node node) {
+	public static int diameterOfBinaryTree(TreeNode node) {
 		if (null == node) {
 			return 0;
 		} else {
@@ -37,7 +35,7 @@ public class BinaryTreeDiameter {
 		}
 	}
 
-	public static int heightOfBinaryTree(Node node) {
+	public static int heightOfBinaryTree(TreeNode node) {
 		if (null == node) {
 			return 0;
 		} else {
@@ -46,7 +44,7 @@ public class BinaryTreeDiameter {
 		}
 	}
 
-	public static void printBinaryTree(Node node) {
+	public static void printBinaryTree(TreeNode node) {
 		if (null == node) {
 			return;
 		} else {
@@ -56,7 +54,7 @@ public class BinaryTreeDiameter {
 		}
 	}
 
-	public static Node buildBinaryTree(Node root) {
+	public static TreeNode buildBinaryTree(TreeNode root) {
 		Random rand = new Random();
 		for (int i = 0; i < N; i++) {
 			int value = rand.nextInt(RANGE);
@@ -66,7 +64,7 @@ public class BinaryTreeDiameter {
 		return root;
 	}
 
-	public static Node insertBinaryTree(Node node, int value) {
+	public static TreeNode insertBinaryTree(TreeNode node, int value) {
 		if (null == node) {
 			return newNode(value);
 		} else {
@@ -79,8 +77,8 @@ public class BinaryTreeDiameter {
 		}
 	}
 
-	public static Node newNode(int value) {
-		Node node = new Node(value);
+	public static TreeNode newNode(int value) {
+		TreeNode node = new TreeNode(value);
 
 		return node;
 	}

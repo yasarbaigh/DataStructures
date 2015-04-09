@@ -1,4 +1,4 @@
-package oy.ds.tree.check;
+package org.yasar.ds.tree.check;
 
 public class SampleTree
 {

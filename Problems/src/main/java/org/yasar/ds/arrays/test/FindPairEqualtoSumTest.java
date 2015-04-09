@@ -1,8 +1,7 @@
-package oy.ds.arrays.test;
+package org.yasar.ds.arrays.test;
 
 import org.junit.Test;
-
-import oy.ds.arrays.FindPairEqualtoSum;
+import org.yasar.ds.arrays.FindPairEqualtoSum;
 
 public class FindPairEqualtoSumTest
 {

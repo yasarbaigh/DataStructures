@@ -1,4 +1,4 @@
-package oy.ds.tree;
+package org.yasar.ds.tree;
 
 /**
  * print post order traversal from given inorder and preorder values

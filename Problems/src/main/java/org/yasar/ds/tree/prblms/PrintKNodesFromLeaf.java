@@ -1,6 +1,6 @@
-package oy.ds.tree.prblms;
+package org.yasar.ds.tree.prblms;
 
-import oy.ds.tree.Node1;
+import org.yasar.ds.tree.Node1;
 
 /**
  * 

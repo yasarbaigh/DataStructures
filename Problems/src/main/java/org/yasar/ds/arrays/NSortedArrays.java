@@ -1,4 +1,4 @@
-package oy.ds.arrays;
+package org.yasar.ds.arrays;
 
 import java.util.ArrayList;
 import java.util.Collections;

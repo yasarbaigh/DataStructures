@@ -1,4 +1,4 @@
-package oy.ds.tree.rbrt;
+package org.yasar.ds.tree.rbrt;
 
 import java.util.LinkedList;
 import java.util.Queue;

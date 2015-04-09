@@ -1,4 +1,4 @@
-package oy.ds.others;
+package org.yasar.ds.others;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package oy.ds.string;
+package org.yasar.ds.string;
 
 public class LargestCmnString
 {

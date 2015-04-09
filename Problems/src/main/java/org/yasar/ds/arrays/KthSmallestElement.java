@@ -1,4 +1,4 @@
-package oy.ds.arrays;
+package org.yasar.ds.arrays;
 
 /**
  * http://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/

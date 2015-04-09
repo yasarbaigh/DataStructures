@@ -1,9 +1,8 @@
-package oy.ds.arrays.test;
+package org.yasar.ds.arrays.test;
 
 import org.junit.Assert;
 import org.junit.Test;
-
-import oy.ds.arrays.KthSmallestElement;
+import org.yasar.ds.arrays.KthSmallestElement;
 
 public class KthSmallestTest
 {

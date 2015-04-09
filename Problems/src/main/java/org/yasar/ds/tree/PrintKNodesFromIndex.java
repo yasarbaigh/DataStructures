@@ -1,6 +1,5 @@
-package oy.ds.tree;
+package org.yasar.ds.tree;
 
-import oy.ds.tree.PrintBTVertical.Node;
 
 /**
  * http://stackoverflow.com/questions/7865055/nodes-at-a-distance-k-in-binary-tree
@@ -10,7 +9,7 @@ import oy.ds.tree.PrintBTVertical.Node;
  *
  */
 public class PrintKNodesFromIndex {
-	private void printNodeAtN(Node root, Node start, int k) {
+	private void printNodeAtN(TreeNode root, TreeNode start, int k) {
 	    if (root != null) {
 	        // calculate if the start is in left or right subtree - if start is
 	        // root this variable is null
@@ -50,7 +49,7 @@ public class PrintKNodesFromIndex {
 	}
 
 	    // print the nodes at depth - "level" from root
-	void printNode(int level, Node root) {
+	void printNode(int level, TreeNode root) {
 	    if (level == 0 && root != null) {
 	        System.out.println(root.data);
 	    } else {
@@ -61,7 +60,7 @@ public class PrintKNodesFromIndex {
 	}
 
 	// print the children of the start
-	void printNodeDown(Node start, int k) {
+	void printNodeDown(TreeNode start, int k) {
 	    if (start != null) {
 	        if (k == 0) {
 	            System.out.println(start.data);
@@ -71,7 +70,7 @@ public class PrintKNodesFromIndex {
 	    }
 	}
 
-	private int depth(Node root, Node node, int d) {
+	private int depth(TreeNode root, TreeNode node, int d) {
 	    if (root == null)
 	        return -1;
 	    if (root != null && node == root) {

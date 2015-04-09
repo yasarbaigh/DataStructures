@@ -1,10 +1,31 @@
 package org.yasar.ds.tree;
 
-public class TreeUtil
-{
-	public static Node1 getRoot()
+public class TreeNode  implements Comparable<TreeNode> {
+
+	public int data;
+	public TreeNode left;
+	public TreeNode right;
+
+	public TreeNode(int data) {
+		this.data = data;
+		
+		left = null;
+		right = null;
+	}
+	
+	@Override
+	public int compareTo(TreeNode that) {
+		return this.data - that.data ;
+	}
+
+	@Override
+	public String toString(){
+		return this.data + "";
+	}
+
+	public static TreeNode getRoot()
 	{
-		Node1 root = new Node1(4);
+		TreeNode root = new TreeNode(4);
 		treeInsert(root, 2);
 		treeInsert(root, 1);
 		treeInsert(root, 3);
@@ -15,9 +36,9 @@ public class TreeUtil
 	}
 	
 	
-	public static Node1 getRoot1()
+	public static TreeNode getRoot1()
 	{
-		Node1 root = new Node1(8);
+		TreeNode root = new TreeNode(8);
 		treeInsert(root, 4);
 		treeInsert(root, 12);
 		
@@ -39,29 +60,29 @@ public class TreeUtil
 	}
 	
 	/*
-	 * Given a non-empty tree, insert a new Node1 in the proper place. The tree
+	 * Given a non-empty tree, insert a new TreeNode in the proper place. The tree
 	 * must be non-empty because Java's lack of reference variables makes that
 	 * case and this method messier than they should be.
 	 */
-	public static void treeInsert(Node1 root, int newData)
+	public static void treeInsert(TreeNode root, int newData)
 	{
 		if(newData <= root.data) {
 			if(root.left != null)
 				treeInsert(root.left, newData);
 			else
-				root.left = new Node1(newData);
+				root.left = new TreeNode(newData);
 		}
 		else {
 			if(root.right != null)
 				treeInsert(root.right, newData);
 			else
-				root.right = new Node1(newData);
+				root.right = new TreeNode(newData);
 		}
 	}
 
 	// Do an inorder traversal to print a tree
 	// Does not print the ending "\n"
-	public static void printTreeInOrder(Node1 root)
+	public static void printTreeInOrder(TreeNode root)
 	{
 		if(root == null)
 			return;
@@ -72,7 +93,7 @@ public class TreeUtil
 	
 	// Do an pre-order traversal to print a tree
 	// Does not print the ending "\n"
-	public static void printTreePreOrder(Node1 root)
+	public static void printTreePreOrder(TreeNode root)
 	{
 		if(root == null)
 			return;
@@ -82,9 +103,9 @@ public class TreeUtil
 	}
 
 	// Do a traversal of the list and print it out
-	public static void printList(Node1 head)
+	public static void printList(TreeNode head)
 	{
-		Node1 current = head;
+		TreeNode current = head;
 
 		while (current != null) {
 			System.out.print(Integer.toString(current.data) + " ");
@@ -96,6 +117,4 @@ public class TreeUtil
 		System.out.println();
 	}
 	
-
-
 }

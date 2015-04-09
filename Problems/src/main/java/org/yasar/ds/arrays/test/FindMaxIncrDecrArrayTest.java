@@ -1,8 +1,7 @@
-package oy.ds.arrays.test;
+package org.yasar.ds.arrays.test;
 
 import org.junit.Test;
-
-import oy.ds.arrays.FindMaxIncrDecrArray;
+import org.yasar.ds.arrays.FindMaxIncrDecrArray;
 
 public class FindMaxIncrDecrArrayTest
 {

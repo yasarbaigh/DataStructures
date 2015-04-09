@@ -1,4 +1,4 @@
-package oy.ds.tree;
+package org.yasar.ds.tree;
 
 import java.util.Stack;
 
@@ -8,29 +8,6 @@ import java.util.Stack;
  * @author jyasar
  * 
  */
-
-class TreeNode implements Comparable<TreeNode>
-{
-	public TreeNode left;
-	public int data;
-	public TreeNode right;
-
-	public TreeNode(int val)
-	{
-		this.data=val;
-	}
-
-	@Override
-	public int compareTo(TreeNode that) {
-		return this.data - that.data ;
-	}
-
-	@Override
-	public String toString(){
-		return this.data + "";
-	}
-
-}
 
 public class PrfctTreeOperations
 {

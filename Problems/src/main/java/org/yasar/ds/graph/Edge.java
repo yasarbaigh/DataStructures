@@ -1,4 +1,4 @@
-package oy.ds.graph;
+package org.yasar.ds.graph;
 
 public class Edge
 {

@@ -1,4 +1,4 @@
-package oy.ds.tree.rbrt;
+package org.yasar.ds.tree.rbrt;
 
 public class Node {
 	int iValue;

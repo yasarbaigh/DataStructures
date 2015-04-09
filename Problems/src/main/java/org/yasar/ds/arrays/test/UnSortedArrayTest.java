@@ -1,11 +1,10 @@
-package oy.ds.arrays.test;
+package org.yasar.ds.arrays.test;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-import oy.ds.arrays.UnSortedArray;
-import oy.ds.arrays.UnSortedArray.MinMaxSubClass;
+import org.yasar.ds.arrays.UnSortedArray;
+import org.yasar.ds.arrays.UnSortedArray.MinMaxSubClass;
 
 public class UnSortedArrayTest
 {

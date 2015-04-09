@@ -1,4 +1,4 @@
-package oy.ds.graph.robert;
+package org.yasar.ds.graph.robert;
 
 //Minimum Spanning Tree
 

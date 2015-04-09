@@ -1,4 +1,4 @@
-package oy.ds.amazon;
+package org.yasar.ds.amazon;
 
 /**
  * http://coderevisited.com/how-to-detect-if-a-linked-list-has-a-loop/

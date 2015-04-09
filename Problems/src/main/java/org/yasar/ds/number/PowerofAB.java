@@ -1,4 +1,4 @@
-package oy.ds.number;
+package org.yasar.ds.number;
 
 public class PowerofAB
 {

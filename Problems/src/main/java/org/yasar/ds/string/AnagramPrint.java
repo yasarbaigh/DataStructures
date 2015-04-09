@@ -1,4 +1,4 @@
-package oy.ds.string;
+package org.yasar.ds.string;
 
 import java.util.HashSet;
 import java.util.LinkedList;

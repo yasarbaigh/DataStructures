@@ -1,8 +1,7 @@
-package oy.ds.bits.test;
+package org.yasar.ds.bits.test;
 
 import org.junit.Test;
-
-import oy.ds.bits.BitsAndBytes;
+import org.yasar.ds.bits.BitsAndBytes;
 
 public class BitsTest
 {

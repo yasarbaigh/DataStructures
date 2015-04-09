@@ -1,4 +1,4 @@
-package oy.ds.stack;
+package org.yasar.ds.stack;
 
 import java.util.Stack;
 
