@@ -1,0 +1,70 @@
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+*.gem
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.tar.gz
+*.zip
+*.rpm
+*.war
+*.ear
+
+ 
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+## Derivative / Auto-created directories to ignore
+build/
+target/
+bin/
+
+## Eclipse specific
+.classpath
+.project
+.settings/
+.metadata
+
+## Gradle specific
+.gradle/
+
+## Git specific
+*.git
+
+
+## Ignore .svn files
+.svn
+
+#TestNG
+test-output
+#bin
