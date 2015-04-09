@@ -10,7 +10,7 @@ public class MyLogger
 	
 	public static Logger getLog4jLogger(Class clazz)
 	{
-		PropertyConfigurator.configure("log4j_console.properties");
+		PropertyConfigurator.configure("src/main/resources/log4j_console.properties");
 		return Logger.getLogger(clazz);		
 	}
 }
