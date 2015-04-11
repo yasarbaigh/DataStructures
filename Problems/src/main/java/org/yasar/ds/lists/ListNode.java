@@ -3,7 +3,7 @@ package org.yasar.ds.lists;
 public class ListNode
 {
 	int value;
-	ListNode next;
+	public ListNode next;
 	
 	public ListNode(int v)
 	{
@@ -11,8 +11,12 @@ public class ListNode
 		value = v;
 	}
 	
+	public  void printList()
+	{
+		printList(this);
+	}
 	
-	public void printList(ListNode  node)
+	public static void printList(ListNode node)
 	{
 		while(node != null)
 		{
