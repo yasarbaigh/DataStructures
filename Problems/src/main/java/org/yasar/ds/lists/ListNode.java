@@ -18,19 +18,26 @@ public class ListNode
 	
 	public static void printList(ListNode node)
 	{
-		while(node != null)
+		ListNode temp = node;
+		while(temp != null)
 		{
-			System.out.print(node.value + ", ");
-			node = node.next;
+			System.out.print(temp.value + ", ");
+			temp = temp.next;
 		}
 	}
 	
 	public static ListNode getList()
+	{		
+		return getList(10);		
+	}
+	
+	public static ListNode getList(int index)
 	{
 		ListNode head = new ListNode(1);
-		ListNode next = head;
 		
-		for(int i = 2 ; i< 10; i++)
+		ListNode next = head;
+				
+		for(int i = 2 ; i<= index; i++)
 		{
 			next.next = new ListNode(i);
 			next = next.next;
