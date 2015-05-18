@@ -2,6 +2,22 @@ package org.yasar.ds.tree;
 
 public class TreeNode  implements Comparable<TreeNode> {
 
+	public TreeNode getLeft() {
+		return left;
+	}
+
+	public void setLeft(TreeNode left) {
+		this.left = left;
+	}
+
+	public TreeNode getRight() {
+		return right;
+	}
+
+	public void setRight(TreeNode right) {
+		this.right = right;
+	}
+
 	public int data;
 	public TreeNode left;
 	public TreeNode right;

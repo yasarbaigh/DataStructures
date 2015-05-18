@@ -11,11 +11,11 @@ public class BTFromInPreOrder
 		// int in[] = new int[]{1, 2, 4, 5, 6, 7};
 		// int pre[] = new int[]{5, 2, 1, 4, 7, 6};
 
-		int in[] = new int[] { 1, 2, 4, 8, 9, 10, 12, 15, 16 };
+	/*	int in[] = new int[] { 1, 2, 4, 8, 9, 10, 12, 15, 16 };
 		int pre[] = new int[] { 8, 4, 2, 1, 12, 10, 9, 15, 16 };
-
-		// int in[] = new int[] {8, 10, 11, 12};
-		// int pre[] = new int[] { 8, 12, 10, 11 };
+*/
+		 int in[] = new int[] {8, 10, 11, 12};
+		int pre[] = new int[] { 8, 12, 10, 11 };
 
 		
 		//One Approach

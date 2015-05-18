@@ -12,7 +12,7 @@ public class AnagramPrint
 	{
 		//stringPermutation("TESTPERMUTATION");
 		stringPermutation("ABC");
-		permute("ABC");
+		anotherPermute("ABC");
 	}
 
 	public static void stringPermutation(String str)
@@ -52,7 +52,7 @@ public class AnagramPrint
 	 * 
 	 * @param s
 	 */
-	public static void permute(String s) {
+	public static void anotherPermute(String s) {
 	    if(null==s || s.isEmpty()) {
 	        return;
 	    }
