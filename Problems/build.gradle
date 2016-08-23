@@ -2,6 +2,14 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
 
+eclipseClasspath.doFirst {
+	initSourceFolders()
+}
+
+def initSourceFolders() { // add << before { to prevent executing during configuration phase
+   sourceSets*.java.srcDirs*.each { it.mkdirs() }
+   sourceSets*.resources.srcDirs*.each { it.mkdirs() }
+}
 // tag::repositories[]
 repositories {
     mavenCentral()
