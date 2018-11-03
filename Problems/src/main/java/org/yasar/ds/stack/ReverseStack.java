@@ -34,6 +34,8 @@ public class ReverseStack<T> {
 		s.push(3);
 		s.push(4);
 
+		
+		
 		System.out.println(s);
 		rsbr.reverse(s);
 		System.out.println(s);
