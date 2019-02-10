@@ -14,7 +14,19 @@ public class ListReverse {
 
 		System.out.print("\nAfter Reverse : ");
 		ListNode.printList(newHead);
-		System.out.println("---------------------------");
+		System.out.println("\n---------------------------");
+		
+		
+		head = ListNode.getList();
+
+		System.out.print("Before Reverse: ");
+		ListNode.printList(head);
+
+		newHead = reverseListRecursive(head);
+
+		System.out.print("\nAfter Reverse : ");
+		ListNode.printList(newHead);
+		System.out.println("\n---------------------------");
 	}
 
 	public static ListNode reverseEntireList(ListNode head) {
@@ -34,7 +46,7 @@ public class ListReverse {
 		return head;
 	}
 
-	public ListNode reverseListRecursive(ListNode head) {
+	public static ListNode reverseListRecursive(ListNode head) {
 
 		ListNode first = null;
 		ListNode rest = null;
