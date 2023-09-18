@@ -20,14 +20,14 @@ public class FCFSScheduler implements Schedulers {
 
 		String[] jobsAllocated = new String[threadsCount];
 		int totalTimeCycles = 0;
-		
+
 		int count = 0;
 
 		int currenThread = 0;
 
 		for (Job item : jobs) {
 			jobsAllocated[currenThread] += "  " + item.getId() + ",";
-			
+
 			timeConsumed[currenThread] += item.getExecutionTime();
 			totalTimeCycles += item.getExecutionTime();
 
@@ -37,7 +37,7 @@ public class FCFSScheduler implements Schedulers {
 
 		count = 0;
 		for (String item : jobsAllocated) {
-			
+
 			System.out.println("Thread T" + count++ + ": [" + item + "]");
 		}
 
@@ -58,20 +58,20 @@ public class FCFSScheduler implements Schedulers {
 		int currenThread = 0;
 
 		for (Job item : jobs) {
-			
-			//if time-out reached b4 scheduling then skips
-			if(timeConsumed[currenThread] <= item.getTimeoutDeadLine()) {
+
+			// if time-out reached b4 scheduling then skips
+			if (timeConsumed[currenThread] <= item.getTimeoutDeadLine()) {
 				jobsAllocated[currenThread] += "  " + item.getId() + ",";
-				
+
 				timeConsumed[currenThread] += item.getExecutionTime();
 				totalTimeCycles += item.getExecutionTime();
 
 				count++;
 				currenThread = count % threadsCount;
 			} else {
-				skippedJobs  += "  " + item.getId()+ ",";
-			}		
-			
+				skippedJobs += "  " + item.getId() + ",";
+			}
+
 		}
 
 		count = 0;

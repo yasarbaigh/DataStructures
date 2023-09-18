@@ -16,7 +16,8 @@ public class KthSmallestTest
 		System.out.println(objt.kSmallest(2, 0, 4));
 		*/
 		objt = new KthSmallestElement(new int[]{5, 6, 1, 4, 8});
-		System.out.println(objt.kSmallest(5, 0, 4));
+//		System.out.println(objt.kSmallest(4, 0, 4));
+		Assert.assertEquals(6, objt.kSmallest(4, 0, 4));
 	}
 	
 	@Test

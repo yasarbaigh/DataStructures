@@ -107,7 +107,7 @@ public class LoopInList<T>
 
 	/**
 	 * 
-	 * Brent’s Cycle Detection Algorithm
+	 * Brent Cycle Detection Algorithm
 	 * 
 	 * @return
 	 */
