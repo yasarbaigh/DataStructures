@@ -5,6 +5,7 @@ import java.util.Map;
 // https://www.codingninjas.com/studio/problems/complete-string_2687860?leftPanelTab=0
 // https://www.youtube.com/watch?v=AWnBa91lThI
 
+
 class TrieNode {
 	private final Map<Character, TrieNode> children = new HashMap<>();
 	private boolean endOfWord;
@@ -14,6 +15,7 @@ class TrieNode {
 	}
 
 	boolean isEndOfWord() {
+
 		return endOfWord;
 	}
 
@@ -34,7 +36,7 @@ public class TrieNodeOps {
 		root = new TrieNode();
 	}
 
-	void insert(String word) {
+	public void insert(String word) {
 		TrieNode current = root;
 
 		for (char l : word.toCharArray()) {
@@ -43,11 +45,11 @@ public class TrieNodeOps {
 		current.setEndOfWord(true);
 	}
 
-	boolean delete(String word) {
+	public boolean delete(String word) {
 		return delete(root, word, 0);
 	}
 
-	boolean containsNode(String word) {
+	public boolean containsFullWord(String word) {
 		TrieNode current = root;
 
 		for (int i = 0; i < word.length(); i++) {
@@ -87,7 +89,7 @@ public class TrieNodeOps {
 		return false;
 	}
 
-	boolean checkIfAllPrefixExists(String word) {
+	public boolean checkIfAllPrefixExists(String word) {
 		TrieNode node = root;
 		boolean flag = true;
 		for (int i = 0; i < word.length() && flag; i++) {
@@ -101,6 +103,26 @@ public class TrieNodeOps {
 			}
 		}
 		return flag;
+	}
+
+	public long fullNodeCount() {
+
+		return fullNodeCount(root);
+	}
+
+	private long fullNodeCount(TrieNode nd) {
+		if (nd == null) {
+			return 0;
+		}
+
+		long count = 1;
+
+		for (Map.Entry<Character, TrieNode> e : nd.getChildren().entrySet()) {
+			count += fullNodeCount(e.getValue());
+		}
+
+		
+		return count;
 	}
 
 }
